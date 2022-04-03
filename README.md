@@ -6,8 +6,10 @@ peoplenet-tao-toolkit は、NVIDIA TAO TOOLKIT を用いて PeopleNet の AIモ�
     - TAO TOOLKIT
 - PeopleNet
 - Docker
+- TensorRT Runtime
 
 ## 動作手順
+
 ### engineファイルの生成
 PeopleNet のAIモデルをデバイスに最適化するため、ResNet34 における PeopleNet の .etlt ファイルを engine file に変換します。
 engine fileへの変換は、Makefile に記載された以下のコマンドにより実行できます。
