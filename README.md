@@ -11,7 +11,7 @@ peoplenet-tao-toolkit は、NVIDIA TAO TOOLKIT を用いて PeopleNet の AIモ�
 ## 動作手順
 
 ### engineファイルの生成
-PeopleNet のAIモデルをデバイスに最適化するため、ResNet34 における PeopleNet の .etlt ファイル（resnet34_peoplenet_pruned.etlt）を engine file に変換します。
+PeopleNet のAIモデルをデバイスに最適化するため、ResNet34 における PeopleNet の .etlt ファイルを engine file に変換します。
 engine fileへの変換は、Makefile に記載された以下のコマンドにより実行できます。
 
 ```
@@ -22,5 +22,4 @@ tao-convert:
 ## 相互依存関係にあるマイクロサービス  
 本マイクロサービスで最適化された PeopleNet の AIモデルを Deep Stream 上で動作させる手順は、[peoplenet-deepstream](https://github.com/latonaio/peoplenet-deepstream)を参照してください。  
 
-## engineファイルについて
-engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)と共通のファイルであり、本マイクロサービスで生成した engineファイルを、当該リポジトリで使用しています。  
+
