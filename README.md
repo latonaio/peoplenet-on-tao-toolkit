@@ -22,4 +22,5 @@ tao-convert:
 ## 相互依存関係にあるマイクロサービス  
 本マイクロサービスで最適化された PeopleNet の AIモデルを Deep Stream 上で動作させる手順は、[peoplenet-deepstream](https://github.com/latonaio/peoplenet-deepstream)を参照してください。  
 
-
+## engineファイルについて
+engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)と共通のファイルであり、本レポジトリで作成した engineファイルを、当該リポジトリで使用しています。  
