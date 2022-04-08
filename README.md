@@ -1,5 +1,5 @@
-# peoplenet-tao-toolkit
-peoplenet-tao-toolkit は、NVIDIA TAO TOOLKIT を用いて PeopleNet の AIモデル最適化を行うマイクロサービスです。  
+# peoplenet-on-tao-toolkit
+peoplenet-on-tao-toolkit は、NVIDIA TAO TOOLKIT を用いて PeopleNet の AIモデル最適化を行うマイクロサービスです。  
 
 ## 動作環境
 - NVIDIA 
@@ -7,6 +7,10 @@ peoplenet-tao-toolkit は、NVIDIA TAO TOOLKIT を用いて PeopleNet の AIモ�
 - PeopleNet
 - Docker
 - TensorRT Runtime
+
+## PeopleNetについて
+PeopleNet は、画像内の人を検出し、カテゴリラベルを返すAIモデルです。  
+PeopleNet は、バックボーン特徴抽出にResNet34を使用しており、混雑した場所でも正確に物体検出を行うことができます。
 
 ## 動作手順
 
@@ -20,7 +24,7 @@ tao-convert:
 ```
 
 ## 相互依存関係にあるマイクロサービス  
-本マイクロサービスで最適化された PeopleNet の AIモデルを Deep Stream 上で動作させる手順は、[peoplenet-deepstream](https://github.com/latonaio/peoplenet-deepstream)を参照してください。  
+本マイクロサービスで最適化された PeopleNet の AIモデルを Deep Stream 上で動作させる手順は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)を参照してください。  
 
 ## engineファイルについて
 engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)と共通のファイルであり、本レポジトリで作成した engineファイルを、当該リポジトリで使用しています。  
