@@ -34,3 +34,9 @@ engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](htt
 
 ## 演算について
 本レポジトリでは、ニューラルネットワークのモデルにおいて、エッジコンピューティング環境での演算スループット効率を高めるため、FP16(半精度浮動小数点)を使用しています。  
+浮動小数点値の変更は、Makefileの以下の部分を変更し、engineファイルを生成してください。
+
+```
+tao-convert:
+	docker exec -it tao-tool-kit tao-converter -k tlt_encode -t fp16 -d 3,544,960 -e /app/src/peoplenet.engine /app/src/resnet34_peoplenet_pruned.etlt 
+```
