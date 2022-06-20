@@ -30,4 +30,7 @@ tao-convert:
 本マイクロサービスで最適化された PeopleNet の AIモデルを Deep Stream 上で動作させる手順は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)を参照してください。  
 
 ## engineファイルについて
-engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)と共通のファイルであり、本レポジトリで作成した engineファイルを、当該リポジトリで使用しています。  
+engineファイルである peoplenet.engine は、[peoplenet-on-deepstream](https://github.com/latonaio/peoplenet-on-deepstream)と共通のファイルであり、本レポジトリで作成した engineファイルを、当該リポジトリで使用しています。
+
+## 演算について
+本レポジトリでは、ニューラルネットワークのモデルにおいて、演算スループット効率を高めるため、FP16(半精度浮動小数点)を使用しています。  
